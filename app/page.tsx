@@ -1,7 +1,21 @@
-export default function Page() {
+"use client";
+
+import HeroSection from "@/components/HeroSection";
+import FeaturedProducts from "@/components/FeaturedProducts";
+import CategoriesSection from "@/components/CategoriesSection";
+import DealsSection from "@/components/DealsSection";
+import TrustSection from "@/components/TrustSection";
+import CtaBanner from "@/components/CtaBanner";
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-2xl font-semibold">Hello from Atomic Builder</h1>
-    </main>
+    <>
+      <HeroSection />
+      <FeaturedProducts />
+      <CategoriesSection />
+      <DealsSection />
+      <TrustSection />
+      <CtaBanner />
+    </>
   );
 }
